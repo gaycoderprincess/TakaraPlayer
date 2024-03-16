@@ -4,6 +4,10 @@ Simple bubbly music player written in C++ with DirectX 11, ImGui and BASS.
 
 Supports WAV, MP3, FLAC and OGG files.
 
+![preview image](https://i.imgur.com/cxGiWYb.png)
+
+Special thanks to my lovely wifey teddyator for the art assets.
+
 ## Building
 
 Building is done on an Arch Linux system with CLion and vcpkg being used for the build process. 
