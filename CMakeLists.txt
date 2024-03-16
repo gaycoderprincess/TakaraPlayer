@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.27)
-project(MusicPlayer)
+project(TakaraPlayer)
 
 SET(CMAKE_SYSTEM_NAME Windows)
 
@@ -21,7 +21,7 @@ include_directories(${CMAKE_SOURCE_DIR}/include/taglib)
 link_directories(${CMAKE_SOURCE_DIR}/../nya-common/lib64)
 
 add_compile_definitions(IMGUI_USER_CONFIG="../../nya_imconfig.h" NYA_BACKEND_DX11 NYA_AUDIO_BASS NYA_APP_WINDOWNAME="nya :3" NYA_FONTNAME="FranxurterTotallyMedium-gxwjp.ttf" NYA_FONTSIZE=64.0)
-add_executable(MusicPlayer
+add_executable(TakaraPlayer
         ../nya-common/3rdparty/imgui/imgui.cpp
         ../nya-common/3rdparty/imgui/backends/imgui_impl_dx11.cpp
         ../nya-common/3rdparty/imgui/imgui_draw.cpp
@@ -39,9 +39,9 @@ add_executable(MusicPlayer
         musicplayer_draw.cpp
         main.cpp)
 
-target_link_libraries(MusicPlayer d3d11)
-target_link_libraries(MusicPlayer d3dcompiler)
-target_link_libraries(MusicPlayer tag)
-target_link_libraries(MusicPlayer zlib)
-target_link_libraries(MusicPlayer comdlg32)
-target_link_libraries(MusicPlayer bass)
+target_link_libraries(TakaraPlayer d3d11)
+target_link_libraries(TakaraPlayer d3dcompiler)
+target_link_libraries(TakaraPlayer tag)
+target_link_libraries(TakaraPlayer zlib)
+target_link_libraries(TakaraPlayer comdlg32)
+target_link_libraries(TakaraPlayer bass)
