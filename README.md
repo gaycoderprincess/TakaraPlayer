@@ -19,8 +19,8 @@ vcpkg install taglib:x64-mingw-static
 
 Once installed, copy files from `~/.vcpkg/vcpkg/installed/x64-mingw-static/`:
 
-- `include` dir to `nya_common/3rdparty`
-- `lib` dir to `nya_common/lib64`
+- `include` dir to `nya-common/3rdparty`
+- `lib` dir to `nya-common/lib64`
 
 You should be able to build the project now in CLion.
 
