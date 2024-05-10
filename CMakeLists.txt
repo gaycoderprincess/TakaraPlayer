@@ -20,7 +20,7 @@ include_directories(${CMAKE_SOURCE_DIR}/include)
 include_directories(${CMAKE_SOURCE_DIR}/include/taglib)
 link_directories(${CMAKE_SOURCE_DIR}/../nya-common/lib64)
 
-add_compile_definitions(IMGUI_USER_CONFIG="../../nya_imconfig.h" NYA_BACKEND_DX11 NYA_AUDIO_BASS NYA_APP_WINDOWNAME="nya :3" NYA_FONTNAME="FranxurterTotallyMedium-gxwjp.ttf" NYA_FONTSIZE=64.0)
+add_compile_definitions(IMGUI_USER_CONFIG="../../nya_imconfig.h" NYA_BACKEND_DX11 NYA_AUDIO_BASS NYA_APP_WINDOWNAME="nya :3" NYA_FONTNAME="FranxurterTotallyMedium-gxwjp.ttf" NYA_FONTSIZE=64.0 NYA_APP_WINDOWED=false)
 add_executable(TakaraPlayer
         ../nya-common/3rdparty/imgui/imgui.cpp
         ../nya-common/3rdparty/imgui/backends/imgui_impl_dx11.cpp
